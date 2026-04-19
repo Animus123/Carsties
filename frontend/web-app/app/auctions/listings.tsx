@@ -21,7 +21,9 @@ export default function Listings() {
             pageSize: state.pageSize,
             searchTerm: state.searchTerm,
             orderBy: state.orderBy,
-            filterBy: state.filterBy
+            filterBy: state.filterBy,
+            seller: state.seller,
+            winner: state.winner
         }))
     );
 
