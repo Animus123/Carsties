@@ -31,7 +31,7 @@ export default async function Details({ params }: { params: Promise<{ id: string
         </div>
       </div>
       <div className='grid grid-cols-2 gap-6 mt-3'>
-        <div className='relative w-full bg-gray-200 aspect-[16/10] rounded-lg overflow-hidden'>
+        <div className='relative w-full bg-gray-200 aspect-16/10 rounded-lg overflow-hidden'>
           <CarImage imageUrl={data.imageUrl} />
         </div>
         <div className='border-2 rounded-lg p-2 bg-gray-200'>
