@@ -14,7 +14,8 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.pixabay.com'
       }
     ]
-  }
+  },
+  output: 'standalone'
 };
 
 export default withFlowbiteReact(nextConfig);
