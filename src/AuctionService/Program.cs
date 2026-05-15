@@ -50,7 +50,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters.NameClaimType = "username";
     });
 
-// TODO: AddScoped for testing here
+
+builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
 
 builder.Services.AddGrpc();
 
@@ -73,3 +74,5 @@ catch (Exception ex)
 }
 
 app.Run(); 
+
+public partial class Program {}

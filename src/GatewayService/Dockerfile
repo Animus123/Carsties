@@ -4,6 +4,8 @@ WORKDIR /app
 COPY Carsties.sln ./
 COPY src/GatewayService/GatewayService.csproj ./src/GatewayService/
 COPY src/BiddingService/BiddingService.csproj ./src/BiddingService/
+COPY tests/AuctionService.UnitTests/AuctionService.UnitTests.csproj ./tests/AuctionService.UnitTests/
+COPY tests/AuctionService.IntegrationTests/AuctionService.IntegrationTests.csproj ./tests/AuctionService.IntegrationTests/
 
 RUN dotnet restore ./src/GatewayService/GatewayService.csproj
 
