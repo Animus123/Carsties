@@ -14,6 +14,18 @@ jobs:
         service:
           - name: 'nullrefexception/auction-svc'
             path: 'src/AuctionService'
+          - name: 'nullrefexception/search-svc'
+            path: 'src/SearchService'
+          - name: 'nullrefexception/bid-svc'
+            path: 'src/BiddingService'
+          - name: 'nullrefexception/identity-svc'
+            path: 'src/IdentityService'
+          - name: 'nullrefexception/gateway-svc'
+            path: 'src/GatewayService'
+          - name: 'nullrefexception/notify-svc'
+            path: 'src/NotificationService'
+          - name: 'nullrefexception/web-app'
+            path: 'frontend/web-app'
 
     steps:
     - name: Checkout
