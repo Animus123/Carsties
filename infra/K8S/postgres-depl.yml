@@ -13,10 +13,13 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres
+        image: postgres:17
         env:
           - name: POSTGRES_PASSWORD
-            value: postgrespw
+            valueFrom:
+              secretKeyRef:
+                name: postgres-secret
+                key: password
         ports:
         - containerPort: 5432
         volumeMounts:
